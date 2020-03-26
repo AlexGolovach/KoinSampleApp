@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion Android.compileSdkVersion
+    defaultConfig {
+        applicationId Android.applicationId
+        minSdkVersion Android.minSdkVersion
+        targetSdkVersion Android.targetSdkVersion
+        versionCode Android.versionCode
+        versionName Android.versionName
+        testInstrumentationRunner Android.testInstrumentationRunner
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation Libs.kotlinStdlib
+    implementation Libs.appCompact
+    implementation Libs.core
+    implementation Libs.constraintLayout
+    implementation Libs.supportDesign
+
+    implementation Libs.lifecycleExtensions
+    implementation Libs.lifecycleViewModel
+
+    implementation Libs.koin
+    implementation Libs.koinScope
+    implementation Libs.koinViewModel
+
+    implementation Libs.roomRuntime
+    kapt Libs.roomCompiler
+
+    implementation Libs.retrofit
+    implementation Libs.retrofitGsonConverter
+
+    testImplementation Libs.junit
+    androidTestImplementation Libs.junitExt
+    androidTestImplementation Libs.espresso
+}

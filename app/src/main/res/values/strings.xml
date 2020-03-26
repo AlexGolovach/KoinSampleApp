@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyProject</string>
+
+    <string name="LOGIN_TEXT">Login</string>
+    <string name="PASSWORD_TEXT">Password</string>
+    <string name="SIGN_UP">Sign Up</string>
+    <string name="DON_T_HAVE_AN_ACCOUNT">Don\'t have an account?</string>
+    <string name="BACK_TO_LOGIN">Back to login</string>
+    <string name="NAME">Name</string>
+    <string name="load">LOAD</string>
+</resources>
