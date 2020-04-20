@@ -16,3 +16,6 @@ jobs:
     steps:
       - name: Android Github Action
         uses: Vukan-Markovic/Github-Android-Action@1.2
+        with:
+          name: app
+          path: app/build/outputs/apk/debug/app-debug.apk
