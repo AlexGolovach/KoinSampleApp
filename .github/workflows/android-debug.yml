@@ -16,6 +16,11 @@ jobs:
     steps:
       - name: Android Github Action
         uses: Vukan-Markovic/Github-Android-Action@1.2
+      - name: Upload APK
+        uses: actions/upload-artifact@v1
+        with:
+          name: app
+          path: app/build/outputs/apk/debug/app-debug.apk
         with:
           name: app
           path: app/build/outputs/apk/debug/app-debug.apk
