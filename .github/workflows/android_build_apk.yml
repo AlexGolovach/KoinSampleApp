@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-   build:
+   test:
      name: Build debug apk
      runs-on: ubuntu-latest
      
