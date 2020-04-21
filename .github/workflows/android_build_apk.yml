@@ -1,0 +1,16 @@
+name: Build debug apk
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+   build:
+     name: Build debug apk
+     runs-on: ubuntu-latest
+     
+     steps:        
+      - name: Android Github Action
+        uses: Vukan-Markovic/Github-Android-Action@1.2
