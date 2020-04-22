@@ -2,12 +2,14 @@ name: Build debug apk
 
 on:
   push:
-    branches: [ master ]
+    branches: 
+      - master
   pull_request:
-    branches: [ master ]
+    branches: 
+      - master
 
 jobs:
-   test:
+   build:
      name: Build debug apk
      runs-on: ubuntu-latest
      
